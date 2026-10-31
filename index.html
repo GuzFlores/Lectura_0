@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <title>Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navegacion">
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-1" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contenedor">
+            <div class="theme-primary vstack gap-3" >
+                <div style="color: var(--bs-theme-contrast); background: var(--bs-theme-bg);" class="p-3 rounded-5">
+                    <h1 class="h1">Buscador de Google</h1>
+                    <form action="https://www.google.com/search">
+                        <input class="text" type="text" name="q">
+                        <input class="btn-solid theme-success justify-self-start" type="submit" value="Google Search" >
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
