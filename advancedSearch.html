@@ -23,35 +23,27 @@
             </ul>
         </nav>
         <div class="contenedor">
-            <!-- <div class="theme-primary vstack gap-3" >
-                <div style="color: var(--bs-theme-contrast); background: var(--bs-theme-bg);" class="p-3 rounded-5">
-                    <h1 class="h1">Búsqueda Avanzada</h1>
-                    <form action="https://www.google.com/search">
-                        <input class="text" type="text" name="q">
-                        <input class="btn-solid theme-success justify-self-start" type="submit" value="Google Search" >
-                    </form>
-                    
-                </div>-->
-            <form class="form" action="https://www.google.com/advanced_search"> 
+            <form class="form" action="https://www.google.com/search" method="get"> 
                 <h1 class="h1">Búsqueda Avanzada</h1>
                 <h2>Mostrar páginas que contengan:</h2>
                 <div class="elementos mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Todas estas <br>palabras:</label>
-                    <input type="text" class="form-control" id="tePalabras" aria-describedby="tePalabras">
+                    <label for="tePalabras" class="form-label">Todas estas <br>palabras:</label>
+                    <input type="text" class="text" name="as_q" id="tePalabras" >
                 </div>
                 <div class="elementos mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Esta palabra o <br>frase exacta:</label>
-                    <input type="text" class="form-control" id="fraseE" aria-describedby="fraseE">
+                    <label for="fraseE" class="form-label">Esta palabra o <br>frase exacta:</label>
+                    <input type="text" class="text" name="as_epq" id="fraseE" >
+                </div>
+                
+                <div class="elementos mb-3">
+                    <label for="algunaPal" class="form-label">Cualquiera de <br>estas palabras:</label>
+                    <input type="text" class="text" name="as_oq" id="algunaPal" >
                 </div>
                 <div class="elementos mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Ninguna de <br>estas palabras:</label>
-                    <input type="text" class="form-control" id="ningPal" aria-describedby="ningPal">
+                    <label for="ningPal" class="form-label">Ninguna de <br>estas palabras:</label>
+                    <input type="text" class="text" name="as_eq" id="ningPal" >
                 </div>
-                <div class="elementos mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Sitio o <br>dominio:</label>
-                    <input type="text" class="form-control" id="SitDom" aria-describedby="SitDom">
-                </div>
-                <button type="submit" class="btn-solid theme-primary">Submit</button>
+                <button type="submit" class="btn-solid theme-primary">Búsqueda Avanzada</button>
                 </form>
             </div>
         </div>
